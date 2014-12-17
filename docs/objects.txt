@@ -1,0 +1,81 @@
+- objects:
+
+Person
+Profile
+Proposal
+Authorship
+
+Subscription
+
+Company
+Event
+Location
+Area
+Room
+Activity
+
+- auxiliary objects:
+
+Country (import from old database)
+City (import from old database)
+
+Printer
+LabelTemplate
+Log
+PaymentMethod
+
+
+- models skeleton:
+
+  Country
+    id
+    name
+    cctld
+    iso
+  
+  City
+    id
+    state
+    name
+    latitude
+    longitude
+
+  Profile
+    id
+    name
+    content (json)
+  
+  Person
+    id
+    name
+    email
+    organization
+    curriculum
+    photo
+    document
+    passport
+    country_id
+    city_id
+    phone
+    sex
+    password
+    profile_id
+  
+  Proposal
+    id
+    title
+    abstract
+    description
+    video_authorization
+    language
+    level
+  
+  Authorship
+    id
+    proposal_id
+    person_id
+    involvement
+    confirmed
+    main
+    showed_up
+
