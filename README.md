@@ -35,3 +35,5 @@ Use the token with all requests to the API, with the following header:
 ```
 Authorization: Bearer <jwt-token>
 ```
+
+For more information about the queries that you can make on the objects, plase visit: https://flask-restless.readthedocs.org/en/latest/searchformat.html
